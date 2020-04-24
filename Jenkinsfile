@@ -1,7 +1,7 @@
 node{
   stage('SCM Checkout'){
    
-    git 'https://github.com/akhilta/my-app.git'
+    git branch: 'week4' , url : 'https://github.com/akhilta/my-app.git'
   }
   stage('Compile-Package'){
      bat "mvn package"
